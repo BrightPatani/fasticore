@@ -615,6 +615,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .support-image {
@@ -648,103 +649,241 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-section {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 40px 0;
+/* partner section  */
+.partners-section {
+    background-color: #c5d4ed;
+    padding: 60px 0;
     text-align: center;
 }
 
-.footer-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* .partners-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+} */
+
+.partners-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #191c5f;
 }
 
-.footer-content {
+.partners-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #191c5f;
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partner-item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #c5d4ed;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.partner-item:hover {
+    transform: translateY(-10px);
+}
+
+.partner-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #1F2937;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    padding: 40px 0;
+    border-bottom: 1px solid #333;
+}
+
+.footer-top .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
-    background: #c5d4ed;
-    border-radius: 32px;
-    max-width: 1200px;
-    margin-bottom: 20px;
 }
 
-.footer-logo img {
-    max-width: 150px;
+.footer-about img {
+    max-width: 300px;
+    margin-bottom: 15px;
+    background: #c5d4ed;
+    border: 2px;
+    border-radius: 20px;
     padding: 10px;
 }
 
-.footer-links ul {
+.footer-about p {
+    font-size: 1rem;
+    color: #c5d4ed;
+}
+
+.footer-links, .footer-social, .footer-newsletter {
+    margin-bottom: 20px;
+}
+
+.footer-links h3, .footer-social h3, .footer-newsletter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #c5d4ed;
+}
+
+.footer-links ul, .footer-social ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-links ul li {
-    display: inline;
-    margin: 0 15px;
+.footer-links ul li, .footer-social ul li {
+    margin-bottom: 10px;
 }
 
-/* .footer-links ul li a {
-    color: #191c5f;
+.footer-links ul li a, .footer-social ul li a {
+    color: #9CA3AF;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-} */
-/* 
-.footer-links ul li a:hover {
-    color: #F97316;
-} */
-
-.footer-links ul li a {
-    position: relative;
-    color: #191c5f;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 40px;
-}
-.footer-links ul li a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #feaa72;
-    transition: 0.4s;
 }
 
-.footer-links ul li a:hover::before {
-    width: 100%;
+.footer-social ul {
+    display: flex;
+    gap: 10px;
 }
 
-.footer-social a {
-    display: inline-block;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.footer-social a img {
-    width: 36px;
+.footer-social ul li img {
+    width: 50px;
     height: auto;
 }
 
-.footer-social a:hover {
-    transform: scale(1.1);
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    background-color: #2563EB;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #1E40AF;
 }
 
 .footer-bottom {
-    border-top: 1px solid #F97316;
-    padding-top: 10px;
+    background-color: #111827;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer-bottom p {
-    margin: 0;
-    font-size: 14px;
+    font-size: 0.9rem;
+    color: #9CA3AF;
 }
+
+.footer-bottom p a {
+    color: #9CA3AF;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* about page */
+.about-hero {
+    background-color: #2563EB;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+}
+
+/* Mission, Vision, Values Section */
+.about-mission, .about-vision, .about-values {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-mission h3, .about-vision h3, .about-values h3 {
+    font-size: 2rem;
+    color: #2563EB;
+}
+
+.about-mission p, .about-vision p, .about-values p {
+    font-size: 1.1rem;
+    color: #6B7280;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Values Grid */
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.value-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #F3F4F6;
+    border-radius: 10px;
+}
+
+.value-item h4 {
+    color: #2563EB;
+    margin-top: 0;
+}
+
+.value-item p {
+    color: #6B7280;
+}
+
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -802,10 +941,11 @@ body {
         margin-bottom: 30px;
     }
 
-   .footer-content {
-        flex-direction: column;
-        align-items: center;
-   }
+    .partner-item{
+        width: 300px;
+        height: 190px;
+    }
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -917,19 +1057,20 @@ body {
         margin-bottom: 30px;
     }
 
-    .footer-content {
+    .partners-grid {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-links ul li {
-        display: block;
-        margin: 10px 0;
+    .partner-item {
+        width: 70%;
+        margin-bottom: 20px;
+        
     }
 
-    .footer-social {
-        margin-top: 20px;
     }
+
+    
 
     @keyframes scroll-horizontal {
         0% {
