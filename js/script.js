@@ -3,7 +3,7 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 });
 
 document.getElementById('close-btn').addEventListener('click', function() {
-    document.getElementById('side-menu').style.left = '-250px';
+    document.getElementById('side-menu').style.left = '-100%';
 });
 
 

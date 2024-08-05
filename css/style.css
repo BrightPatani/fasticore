@@ -109,34 +109,63 @@ body {
 }
 
 .menu-toggle img {
-    width: 30px;
+    width: 45px;
     height: auto;
 }
 
 .close-btn img {
-    width: 30px;
+    width: 45px;
     height: auto;
 }
 
 .side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    left: -250px;
+    left: -1250px;
     top: 0;
-    width: 250px;
+    width: 100%;
     height: 100%;
     background: #f9f9f9;
     z-index: 101;
     padding: 30px 20px;
-    transition: 0.3s ease-in;
+    transition: 0.6s ease-in;
 }
 
 .side-menu a {
     display: block;
     color: #191c5f;
     text-decoration: none;
-    margin: 20px 0;
+    margin: 15px 0;
     font-size: 1.4rem;
+    box-shadow: 1px 1px ;
+    padding: 2px 10px;
+    border-radius: 30px;
+    background: #f9f9f9;
 }
+
+.side-menu a:hover {
+    background: linear-gradient(to bottom, #f7f7f7, #c5d4ed);
+}
+
+.side-social{
+    display: inline-block;
+    margin: 10px 20px;
+    transition: transform 0.3s;
+}
+
+.side-social img {
+    width: 40px;
+    height: auto;
+    margin: 0px 6px;
+}
+
+.side-social :hover {
+    transform: scale(1.1);
+}
+
 
 .side-menu .close-btn {
     font-size: 30px;
@@ -173,18 +202,27 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 10px;
-    color: #F97316;
+    border: 2px solid #191c5f;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    /* background: linear-gradient(#ffffff, #c4c8cd83);  */
 }
 
 .hero-text h2 {
     font-size: 2rem;
+    color: #F97316;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .hero-text p {
     font-size: 1.1rem;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -603,6 +641,7 @@ body {
 
 .support-text p {
     font-size: 18px;
+    color: #191c5f;
     margin-bottom: 20px;
 }
 
@@ -751,6 +790,11 @@ body {
         text-align: center;
     }
 
+    /* .credible-image img {
+        width: 60%;
+        height: auto;
+    } */
+
     .credible-text {
         margin-bottom: 30px;
     }
@@ -779,7 +823,7 @@ body {
     } */
 
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .hero-text h2 {
@@ -849,7 +893,7 @@ body {
     }
 
     .credible-text {
-        margin-bottom: 30%;
+        margin-bottom: 20px;
     }
     
     .support-text, .support-image {
