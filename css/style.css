@@ -55,7 +55,7 @@ h3 {
 
 .header{
     background: #1e3b8b;
-    padding: 10px 0;
+    padding: 12px 70px;
     border-bottom: 4px solid #F97316;
 }
 
@@ -64,7 +64,7 @@ h3 {
     width: 100%;
     font-size: 1.3rem;
     background: #c5d4ed;
-    padding: 10px 100px;
+    padding: 2px 150px;
     border-radius: 50px;
     justify-content: space-between;
     align-items: center;
@@ -73,7 +73,7 @@ h3 {
 }
 
 .header-logo img {
-    max-width: 200px;
+    max-width: 120px;
 }
 
 .header-links ul {
@@ -121,12 +121,12 @@ h3 {
 
 .header-social a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0px 10px;
     transition: transform 0.3s;
 }
 
 .header-social a img {
-    max-width: 50px;
+    max-width: 30px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -415,7 +415,6 @@ h3 {
     text-align: center;
     color: #191c5f;
     border-bottom: 3px solid #F97316;
-    font-weight: bolder;
     width: 150px;
 }
 
