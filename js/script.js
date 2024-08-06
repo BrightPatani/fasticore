@@ -9,14 +9,14 @@ document.getElementById('close-btn').addEventListener('click', function() {
 
 document.getElementById('scroll-left').addEventListener('click', function() {
     document.getElementById('services-content').scrollBy({
-        left: -300,
+        left: -400,
         behavior: 'smooth'
     });
 });
 
 document.getElementById('scroll-right').addEventListener('click', function() {
     document.getElementById('services-content').scrollBy({
-        left: 300,
+        left: 400,
         behavior: 'smooth'
     });
 });
