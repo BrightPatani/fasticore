@@ -2,6 +2,7 @@
 
 * {
     font-family: "Quicksand", sans-serif;
+    font-size: 14px;
     font-weight: 600;
     font-style: normal;
     margin: 0;
@@ -94,7 +95,6 @@ h3 {
     font-size: 1.3rem;
     color: #191c5f;;
     border-radius: 20px;
-    padding: 4px;
     font-weight: 700;
     text-decoration: none;
     margin-left: 40px;
@@ -887,6 +887,13 @@ h3 {
     }
 }
 
+@media (max-width: 1520px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .body {
         width: 100%;
@@ -944,6 +951,11 @@ h3 {
     .partner-item{
         width: 300px;
         height: 190px;
+    }
+
+    .footer-about p {
+        color: #c5d4ed;
+        margin-bottom: 20px;
     }
  
 }
@@ -1074,7 +1086,12 @@ h3 {
         
     }
 
+    .footer-about p {
+        color: #c5d4ed;
+        margin-bottom: 20px;
     }
+
+}
 
     
 
