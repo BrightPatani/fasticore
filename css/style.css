@@ -2,7 +2,7 @@
 
 * {
     font-family: "Quicksand", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     font-style: normal;
     margin: 0;
@@ -12,13 +12,13 @@
 }
 
 body {
-    background: #0846b23b;
+    background: #191d5fab;
 }
 
 p {
     font-size: 1.3rem;
+    line-height: 1.5;
 }
-
 
 h1{
     font-size: 2.5rem;
@@ -56,7 +56,7 @@ h3 {
 .header{
     background: #1e3b8b;
     padding: 13px 70px;
-    border-bottom: 1px solid #F97316;
+    border-bottom: 1px solid #c5d4ed;
 }
 
 .header-content {
@@ -271,8 +271,9 @@ h3 {
 
 
 .services {
-    padding: 50px 0;
+    padding: 1px 0;
     text-align: center;
+    background: #c5d4ed;
 }
 
 .services-title {
@@ -840,16 +841,16 @@ h3 {
 }
 
 .about-text h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 20px 0;
     color: #191c5f;
 }
 
-.about-text p {
+/* .about-text p {
     font-size: 1.2em;
     margin: 20px 0;
     color: #191c5f;
-}
+} */
 
 .about-image img {
     max-width: 100%;
@@ -860,7 +861,26 @@ hr {
     width: 100%;
     margin: 0;
     color: #6B7280;
+}
 
+.value-proposition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.value-text {
+    max-width: 100%;
+    text-align: center;
+    color: #191c5f;
+}
+
+.value-text h2 {
+    color: #F97316;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -887,7 +907,82 @@ hr {
 }
 
 .value-item p {
-    color: #6B7280;
+    color: #191c5f;
+}
+
+
+/* contact section  */
+
+.contact-section {
+    background: linear-gradient(360deg, #1e3b8b, #c5d4ed);
+    color: #f7f7f7;
+    padding: 80px 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-section p a {
+    font-size: 1.3rem;
+    color: #F97316;
+    text-decoration: none;
+    border-bottom: 1px dashed #F97316;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.contact-section p a:hover {
+    color: #c5d4ed;
+    border-bottom: 1px solid #c5d4ed;
+}
+
+.contact-info {
+    background: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    margin-top: -30px;
+}
+
+.contact-card {
+    background: #f9f9f9;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 40%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.contact-card h2 {
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+/* services page  */
+.services-hero {
+    background: #1e3b8b;
+    color: #c5d4ed;
+    padding: 20px 0;
+    text-align: center;
 }
 
 @keyframes scroll-left {
@@ -982,6 +1077,10 @@ hr {
 
     .about-image img {
         width: 100%;
+    }
+
+    .contact-card {
+        width: 90%;
     }
  
 }
@@ -1124,17 +1223,33 @@ hr {
         text-align: center;
     }
 
-    .about-text, .about-image {
-        max-width: 100%;
-    }
-
     .about-image img {
         width: 100%;
     }
 
-}
+    .value-proposition {
+        width: 100%;
+        padding: 0 20px;
+    }
 
-    
+    .value-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .value-text p {
+        margin-top: 10px;
+    }
+
+    .contact-info {
+        padding: 30px 0;
+    }
+
+    .contact-card {
+        width: 80%;
+    }
+
+
+}
 
     @keyframes scroll-horizontal {
         0% {
