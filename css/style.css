@@ -2,7 +2,7 @@
 
 * {
     font-family: "Quicksand", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     font-style: normal;
     margin: 0;
@@ -56,7 +56,7 @@ h3 {
 .header{
     background: #1e3b8b;
     padding: 13px 70px;
-    border-bottom: 4px solid #F97316;
+    border-bottom: 1px solid #F97316;
 }
 
 .header-content {
@@ -818,38 +818,51 @@ h3 {
 
 
 /* about page */
-.about-hero {
-    background-color: #2563EB;
-    color: #ffffff;
-    padding: 60px 0;
-    text-align: center;
+.about-section {
+    background: #f7f7f7;
 }
 
-.about-hero h2 {
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.about-text h2 {
+    color: #F97316;
+    text-transform: uppercase;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #191c5f;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #191c5f;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+hr {
+    width: 100%;
     margin: 0;
-    font-size: 2.5rem;
-}
-
-.about-hero p {
-    font-size: 1.2rem;
-}
-
-/* Mission, Vision, Values Section */
-.about-mission, .about-vision, .about-values {
-    background-color: #ffffff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.about-mission h3, .about-vision h3, .about-values h3 {
-    color: #2563EB;
-}
-
-.about-mission p, .about-vision p, .about-values p {
     color: #6B7280;
-    max-width: 800px;
-    margin: 0 auto;
+
 }
+
 
 /* Values Grid */
 .values-grid {
@@ -956,6 +969,20 @@ h3 {
         color: #c5d4ed;
         margin-bottom: 20px;
     }
+
+    /* about page  */
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
  
 }
 
@@ -968,7 +995,7 @@ h3 {
     }
 
     .header-logo {
-        margin-right: 100px;
+        margin-right: 20px;
         margin-left: 0px;
     }
 
@@ -1088,6 +1115,21 @@ h3 {
     .footer-about p {
         color: #c5d4ed;
         margin-bottom: 20px;
+    }
+
+
+    /* about page */
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
     }
 
 }
