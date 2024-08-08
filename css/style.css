@@ -759,6 +759,10 @@ h3 {
     text-decoration: none;
 }
 
+.footer-links ul li:hover a {
+    color: #c5d4ed;
+}
+
 .footer-social ul {
     display: flex;
     gap: 10px;
@@ -928,14 +932,14 @@ hr {
 
 .contact-section p a {
     font-size: 1.3rem;
-    color: #F97316;
+    color: #feaa72;
     text-decoration: none;
     border-bottom: 1px dashed #F97316;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .contact-section p a:hover {
-    color: #c5d4ed;
+    color: #f7f7f7;
     border-bottom: 1px solid #c5d4ed;
 }
 
@@ -951,7 +955,7 @@ hr {
 .contact-card {
     background: #f9f9f9;
     margin: 20px;
-    padding: 20px;
+    padding: 38px 40px 45px;
     display: inline-block;
     width: 40%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -959,10 +963,13 @@ hr {
 }
 
 .contact-card h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: #191c5f;
 }
 
 .contact-card p {
+    color: #191c5f;
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -970,8 +977,11 @@ hr {
 }
 
 .contact-card img {
-    width: 20px;
-    height: 20px;
+    max-width: 40px;
+    padding: 4px;
+    background: #f7f7f7;
+    border: 3px dashed #feaa72;
+    border-radius: 10px;
     margin-right: 10px;
 }
 
@@ -1080,7 +1090,7 @@ hr {
     }
 
     .contact-card {
-        width: 90%;
+        width: 60%;
     }
  
 }
@@ -1245,7 +1255,7 @@ hr {
     }
 
     .contact-card {
-        width: 80%;
+        width: 90%;
     }
 
 
