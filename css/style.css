@@ -723,7 +723,7 @@ h3 {
 }
 
 .footer-about img {
-    max-width: 300px;
+    max-width: 220px;
     margin-bottom: 15px;
     background: #c5d4ed;
     border: 2px;
@@ -765,7 +765,7 @@ h3 {
 
 .footer-social ul {
     display: flex;
-    gap: 10px;
+    gap: 6px;
 }
 
 .footer-social ul li img {
@@ -776,6 +776,7 @@ h3 {
 .footer-newsletter form {
     display: flex;
     flex-direction: column;
+    width: 146px;
 }
 
 .footer-newsletter input {
@@ -864,7 +865,7 @@ h3 {
 hr {
     width: 100%;
     margin: 0;
-    color: #6B7280;
+    color: #191c5f;
 }
 
 .value-proposition {
@@ -953,13 +954,16 @@ hr {
 }
 
 .contact-card {
-    background: #f9f9f9;
-    margin: 20px;
-    padding: 38px 40px 45px;
-    display: inline-block;
-    width: 40%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background:#f7f7f7;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    height: auto;
+    flex: 0 0 auto;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .contact-card h2 {
@@ -980,9 +984,15 @@ hr {
     max-width: 40px;
     padding: 4px;
     background: #f7f7f7;
-    border: 3px dashed #feaa72;
+    border: 2px dashed #feaa72;
     border-radius: 10px;
     margin-right: 10px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -1036,6 +1046,7 @@ hr {
         display: block;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: -8px;
     }
 
 
@@ -1099,7 +1110,7 @@ hr {
 
     .header-content{
         width: 100%;
-        padding: 10px 10px;
+        padding: 10px 0px;
         justify-content: space-between;
     }
 
@@ -1114,9 +1125,12 @@ hr {
         margin-bottom: auto;
         margin-right: 20px;
     }
-    /* .header-logo  img{
-        margin-right: 0px;
-    } */
+
+    .header-logo  img{
+        max-width: 120px;
+        padding-left: 10px;
+        height: auto;
+    }
 
     .hero-text h1 {
         font-size: 2.5rem;
@@ -1256,9 +1270,15 @@ hr {
 
     .contact-card {
         width: 90%;
+        flex-direction: column;
+        margin: 20px auto;
     }
 
+    .contact-card p{
+        font-size: 1.1rem;
+    }
 
+    
 }
 
     @keyframes scroll-horizontal {
