@@ -11,8 +11,11 @@
     line-height: 1.5;
 }
 
-body {
+body,html {
     background: #191d5fab;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -1014,13 +1017,13 @@ hr {
     border: none;
     outline: none; 
     background-color: #c5d4ed; 
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 50%; /* Rounded corners for circular design */
+    color: white; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 50%;
     font-size: 18px; 
     box-shadow: inset 3px 3px 6px #f7f7f7, inset -3px -3px 6px #2563EB;
-    transition: all 0.3s ease; /* Smooth transitions */
+    transition: all 0.3s ease; 
 }
 
 #ScrollToTopBtn img {
@@ -1031,6 +1034,49 @@ hr {
 #ScrollToTopBtn:hover {
     background-color: #c5d4ed; /* Darker background on hover */
     box-shadow: inset 3px 3px 6px #2563EB, inset -3px -3px 6px #c5d4ed;
+}
+
+/* Flexbox container to center content */
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #49a3ff, #2563EB);
+    box-shadow: inset 0 0 20px rgba(121, 120, 120, 0.7);
+}
+
+/* Heading styles */
+.coming-soon h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+.coming {
+    font-size: 36px;
+    background: linear-gradient(to bottom, #c5d4ed, #feaa72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph styles */
+.coming-soon p {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin-bottom: 10px;
+    color: #f7f7f7;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
 }
 
 
@@ -1311,7 +1357,13 @@ hr {
         font-size: 1.1rem;
     }
 
+    .coming-soon h1 {
+        font-size: 2.5rem;
+    }
     
+    .coming-soon p {
+        font-size: 1rem;
+    }
 }
 
     @keyframes scroll-horizontal {
@@ -1320,5 +1372,15 @@ hr {
         }
         100% {
             transform: translateX(calc(-100% - 20px)); 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .coming-soon h1 {
+            font-size: 2rem;
+        }
+    
+        .coming-soon p {
+            font-size: 0.9rem;
         }
     }
