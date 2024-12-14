@@ -233,14 +233,12 @@ h3 {
     color: #191c5f;
     z-index: 2;
     border: 2px solid transparent;
-    backdrop-filter: blur(2px);
-    border-radius: 10px; 
+    
 }
 
 .hero-text {
     max-width: 600px;
     background: linear-gradient(to bottom, #d4d6e3, #e6e9f8);
-    margin-left: 20px;
 }
 
 .hero-text h1 {
@@ -256,9 +254,9 @@ h3 {
 .hero-text h2 {
     font-size: 1.75;
     font-weight: bolder;
-    color: #6e6b70;
+    color: #F97316;
     text-align: center;
-    border-bottom: 3px solid #191c5f;
+    border-bottom: 2px solid #6e6b70;
     margin-bottom: 20px;
 }
 
@@ -266,6 +264,7 @@ h3 {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+    padding: 5px;
     margin-bottom: 20px;
 }
 
