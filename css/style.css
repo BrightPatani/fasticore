@@ -57,8 +57,6 @@ h3 {
 }
 
 .header{
-    position: sticky;
-    top: 0;
     background: #1e3b8b;
     padding: 13px 70px;
     border-bottom: 1px solid #c5d4ed;
@@ -214,7 +212,7 @@ h3 {
     color: #fff;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     overflow: hidden;
 }
@@ -226,8 +224,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/hero.png") no-repeat center center/cover; 
-    opacity: 0.5;
+    background: url("../img/hero.jpeg") no-repeat center center/cover; 
     z-index: 1;
 }
 
@@ -235,14 +232,15 @@ h3 {
     position: relative;
     color: #191c5f;
     z-index: 2;
-    border: 0;
-    text-align: center;
+    border: 2px solid transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 10px; 
 }
 
 .hero-text {
     max-width: 600px;
+    background: linear-gradient(to bottom, #d4d6e3, #e6e9f8);
     margin-left: 20px;
-    background-color: #fbfbfb57;
 }
 
 .hero-text h1 {
@@ -258,10 +256,9 @@ h3 {
 .hero-text h2 {
     font-size: 1.75;
     font-weight: bolder;
-    color: #F97316;
+    color: #6e6b70;
     text-align: center;
-    border-bottom: 2px solid #191c5f;
-    border-radius: 10px;
+    border-bottom: 3px solid #191c5f;
     margin-bottom: 20px;
 }
 
@@ -1234,11 +1231,11 @@ hr {
     }
 
     .hero-text h2 {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
     }
 
     .hero-text p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .hero-content {
@@ -1371,7 +1368,7 @@ hr {
     }
 
     .contact-card p{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .coming-soon h1 {
