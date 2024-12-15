@@ -239,7 +239,7 @@ h3 {
 
 .hero-text {
     max-width: 600px;
-    background: linear-gradient(to bottom, #d4d6e3, #e6e9f8);
+    background: linear-gradient(to bottom, #d5d7e5, #e6e9f8);
 }
 
 .hero-text h1 {
@@ -258,14 +258,14 @@ h3 {
     color: #F97316;
     text-align: center;
     border-bottom: 2px solid #6e6b70;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .hero-text p {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
